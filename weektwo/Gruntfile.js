@@ -48,8 +48,11 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             styles: {
-                files: ['<%= config.app %>/sass/{,*/}*.scss'],
-                tasks: ['sass', 'newer:copy:styles', 'autoprefixer']
+                files: ['<%= config.app %>/styles/{,*/}*.css'],
+                tasks: ['sass', 'newer:copy:styles', 'autoprefixer'],
+                options: {
+                    livereload: true
+                }
             },
             livereload: {
                 options: {
