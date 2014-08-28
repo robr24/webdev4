@@ -1,0 +1,21 @@
+/* primary CTA ribbon */
+/* line 47, ../../sass/_partials/decorators.scss */
+.alert--error {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* line 47, ../../sass/_partials/decorators.scss */
+.alert--success {
+  border: 2px solid green;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* line 47, ../../sass/_partials/decorators.scss */
+.alert--info {
+  border: 2px solid blue;
+  padding: 10px;
+  margin: 10px;
+}

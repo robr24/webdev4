@@ -5,7 +5,7 @@
 
 @import "normalize";
 @import "compass";
-@import "compass/css3/transition";
+// @import "compass/css3/transition";
 
 // vars
 // 1. Variables
@@ -13,7 +13,7 @@ $text-color: #333;
 $primary-color: #c00;
 $primary-color--hover: #0c0;
 
-
+// 2. compass mixins
 //font-face($name, $font-files, [$eot], [$weight], [$style])
 @include font-face("noto_sansbold", font-files("notosans-bold-webfont.woff", "notosans-bold-webfont.ttf", "notosans-bold-webfont.svg"), "notosans-bold-webfont.eot");
 @include font-face("noto_regular", font-files("notosans-regular-webfont.woff", "notosans-regular-webfont.ttf", "notosans-regular-webfont.svg"), "notosans-regular-webfont.eot");
@@ -36,8 +36,7 @@ a {
 	&:hover {
 		color: $primary-color--hover;
 		opacity: .5;
-		//2. Compass mixins
-		@include single-transition(opacity 1s ease-in);
+
 	}
 }
 
